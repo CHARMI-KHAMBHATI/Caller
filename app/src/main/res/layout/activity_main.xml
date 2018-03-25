@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.charmi.callerapp.MainActivity">
+
+
+    <LinearLayout android:layout_width="350dp"
+                  android:layout_height="474dp"
+                  android:gravity="center" android:orientation="vertical"
+                  tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="17dp"
+                  tools:layout_editor_absoluteY="37dp">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+        android:padding="20dp">
+
+            <TextView android:id="@+id/numtxt"
+                      android:layout_width="260dp"
+                      android:layout_height="50dp"
+                      android:layout_weight="60"
+                      android:hint="number" android:textSize="25dp"/>
+            <Button android:id="@+id/btnclr"
+                    android:layout_width="@dimen/btn"
+                    android:layout_height="@dimen/btn"
+                    android:layout_weight="20" android:onClick="clr"
+                    android:text="clr"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal" android:orientation="vertical">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <Button android:id="@+id/btn1" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="one"
+                        android:text="1"/>
+
+                <Button android:id="@+id/btn2" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="two"
+                        android:text="2"/>
+                <Button android:id="@+id/btn3" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="three"
+                        android:text="3" tools:ignore="OnClick"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <Button android:id="@+id/btn4" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="four"
+                        android:text="4"/>
+                <Button android:id="@+id/btn5" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="five"
+                        android:text="5"/>
+                <Button android:id="@+id/btn6" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="six"
+                        android:text="6"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <Button android:id="@+id/btn7" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="seven"
+                        android:text="7"/>
+                <Button android:id="@+id/btn8" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="eight"
+                        android:text="8"/>
+                <Button android:id="@+id/btn9" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="nine"
+                        android:text="9"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <Button android:id="@+id/btnstr" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="str"
+                        android:text="*"/>
+                <Button android:id="@+id/btn0" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="zero"
+                        android:text="0"/>
+                <Button android:id="@+id/btnhsh" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="hsh"
+                        android:text="#"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <Button android:id="@+id/btnsave" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="save"
+                        android:text="save"/>
+                <Button android:id="@+id/btncall" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn" android:layout_margin="@dimen/btnmargin"
+                        android:onClick="call"
+                        android:text="call"/>
+                <Button android:id="@+id/btnlog" android:layout_width="@dimen/btnwidth"
+                        android:layout_height="@dimen/btn"
+                        android:onClick="call_log"
+                        android:layout_margin="@dimen/btnmargin" android:text="log"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
